@@ -13,7 +13,7 @@ function Clock() {
   }, []);
 
   const timers = {
-    'hours': (date.getHours() % 12) * 30,
+    'hours': ((date.getHours() % 12) * 30) + (date.getMinutes() * 0.5),
     'minutes': date.getMinutes() * 6,
     'seconds': date.getSeconds() * 6
   };
