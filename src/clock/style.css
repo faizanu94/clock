@@ -21,6 +21,34 @@
   transform: translateX(-50%) translateY(-50%);
 }
 
+.time-3 {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.time-6 {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.time-9 {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translateX(50%) translateY(-50%);
+}
+
+.time-12 {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+}
+
 .hours {
   width: 8px;
   height: 100px;
