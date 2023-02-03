@@ -12,11 +12,16 @@ function Clock() {
 
   const date = new Date();
 
-  const timers = {
-    hours: (date.getHours() % 12) * 30 + date.getMinutes() * 0.5,
-    minutes: date.getMinutes() * 6,
-    seconds: date.getSeconds() * 6,
-  };
+  const timers = [{
+    key: 'hours',
+    value: (date.getHours() % 12) * 30 + date.getMinutes() * 0.5
+  }, {
+    key: 'minutes',
+    value: date.getMinutes() * 6
+  }, {
+    key: 'seconds',
+    value: date.getSeconds() * 6
+  }];
 
   return (
     <div className="clock">
@@ -26,12 +31,8 @@ function Clock() {
           {time}
         </div>
       ))}
-      {Object.keys(timers).map((timer, index) => (
-        <div
-          key={index}
-          className={timer}
-          style={{ transform: `rotate(${timers[timer]}deg)` }}
-        />
+      {timers.map((timer, index) => (
+        <div key={index} className={timer.key} style={{ transform: `rotate(${timer.value}deg) ` }} />
       ))}
     </div>
   );
