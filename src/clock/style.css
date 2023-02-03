@@ -54,9 +54,10 @@
   height: 100px;
   background: #000;
   position: absolute;
-  left: 50%;
+  left: calc(50% - 3px);
   bottom: 50%;
   transform-origin: bottom;
+  transform: translateX(-4px);
 }
 
 .minutes {
@@ -64,7 +65,7 @@
   height: 125px;
   background: #000;
   position: absolute;
-  left: 50%;
+  left: calc(50% - 2px);
   bottom: 50%;
   transform-origin: bottom;
 }
@@ -74,7 +75,7 @@
   height: 125px;
   background: #000;
   position: absolute;
-  left: 50%;
+  left: calc(50% - 0.5px);
   bottom: 50%;
   transform-origin: bottom;
 }
